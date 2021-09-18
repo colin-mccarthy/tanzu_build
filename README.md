@@ -56,4 +56,14 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  ```
  imgpkg copy -b "registry.pivotal.io/build-service/bundle:<TBS-VERSION>" --to-repo <IMAGE-REPOSITORY>
  ```
+  
+  ## Install Tanzu Build Service Public Registry
+ 
+ Pull the Tanzu Build Service bundle image locally using imgpkg.
+ 
+ Where TBS-VERSION and IMAGE-REPOSITORY are the same values used during relocation.
+ 
+ ```
+ imgpkg pull -b "<IMAGE-REPOSITORY>:<TBS-VERSION>" -o /tmp/bundle
+ ```
  

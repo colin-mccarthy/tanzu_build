@@ -97,7 +97,9 @@ kind delete cluster
 
  ## pivnet
  
- ```
+ https://github.com/pivotal-cf/pivnet-cli
+ 
+```
 brew install pivotal/tap/pivnet-cli
 ```
 ``` 

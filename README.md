@@ -88,7 +88,6 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  
  
 🔍 Exception: When using Dockerhub as your registry target, only use your DockerHub account for this value. For example, my-dockerhub-account (without /build-service). Otherwise, you will encounter an error similar to:
- 
  ```
  Error: invalid credentials, ensure registry credentials for 'index.docker.io/my-dockerhub-account/
  build-service/tanzu-buildpacks_go' are available locally

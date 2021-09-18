@@ -138,3 +138,17 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  ```
 
  ## Relocate Images to a Registry
+ 
+ 
+ ```
+ docker login
+ ```
+ 
+ ```
+ docker login registry.pivotal.io
+ ```
+ 
+ ```
+ imgpkg copy -b "registry.pivotal.io/build-service/bundle:<TBS-VERSION>" --to-repo <IMAGE-REPOSITORY>
+ ```
+ 

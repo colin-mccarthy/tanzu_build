@@ -117,7 +117,11 @@ https://network.tanzu.vmware.com/docs/api#how-to-authenticate <-- get "refresh t
 pivnet login --api-token='my-api-token'
 ```
 
+Download the kp CLI for your operating system from the Tanzu Build Service page on Tanzu Network
 
+```
+pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
+```
   
 
 https://docs.pivotal.io/build-service/1-2/installing.html

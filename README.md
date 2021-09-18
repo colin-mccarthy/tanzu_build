@@ -98,3 +98,15 @@ Exception: When using Dockerhub as your registry target, only use your DockerHub
  kapp: Error: waiting on reconcile tanzunetdependencyupdater/dependency-updater (buildservice.tanzu.vmware.com/v1alpha1) namespace: build-service:
   Finished unsuccessfully (Encountered failure condition Ready == False: CannotImportDescriptor (message: GET https://registry.pivotal.io/v2/tanzu-dotnet-core-buildpack/dotnet-core/blobs/sha256:acbe937fb23c24dffa5c9e28c27f88540dd17fa0252e1e4a45e0605b223e253e: UNKNOWN: unexpected error; unexpected error))
  ```
+
+ ```
+ kapp: Error: waiting on reconcile tanzunetdependencyupdater/dependency-updater (buildservice.tanzu.vmware.com/v1alpha1) namespace: build-service:
+  Finished unsuccessfully (Encountered failure condition Ready == False: CannotImportDescriptor (message: GET https://registry.pivotal.io/v2/tanzu-base-bionic-stack/build/blobs/sha256:691bd82d05cb1fc5cca05fc757c0a2f18738562dec528060b72a763b58bc79dd: unexpected status code 502 Bad Gateway: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+))
+ ```

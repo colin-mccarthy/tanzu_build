@@ -86,3 +86,8 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  kapp: Error: waiting on reconcile tanzunetdependencyupdater/dependency-updater (buildservice.tanzu.vmware.com/v1alpha1) namespace: build-service:
   Finished unsuccessfully (Encountered failure condition Ready == False: CannotImportDescriptor (message: GET https://registry.pivotal.io/v2/tbs-dependencies/bundle/manifests/100.0.170: UNAUTHORIZED: unauthorized to access repository: tbs-dependencies/bundle, action: pull: unauthorized to access repository: tbs-dependencies/bundle, action: pull))
 ```
+ 
+ ```
+ kapp: Error: waiting on reconcile tanzunetdependencyupdater/dependency-updater (buildservice.tanzu.vmware.com/v1alpha1) namespace: build-service:
+  Finished unsuccessfully (Encountered failure condition Ready == False: CannotImportDescriptor (message: GET https://registry.pivotal.io/v2/tanzu-dotnet-core-buildpack/dotnet-core/blobs/sha256:acbe937fb23c24dffa5c9e28c27f88540dd17fa0252e1e4a45e0605b223e253e: UNKNOWN: unexpected error; unexpected error))
+ ```

@@ -126,7 +126,8 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
  go env GOPATH
  ```
- 
+
+```
 % go env GOPATH
 /Users/comccarthy/go
 % ls /Users/comccarthy/go
@@ -139,14 +140,13 @@ kp
  export PATH=$PATH:/Users/comccarthy/go/bin
  ```
  
- 
  ```
  echo $PATH
  ```
  
-  ```
- kp clusterbuilder list
- ```
+```
+kp clusterbuilder list
+```
 
  
  

@@ -118,6 +118,25 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
 
 🚨zsh: command not found: kp🚨
+ 
+ ```
+ go get github.com/vmware-tanzu/kpack-cli
+ ```
+ 
+ ```
+  go env GOPATH
+ ```
+ 
+ ```
+ export PATH=$PATH:/Users/comccarthy/go/bin
+ ```
+ 
+ 
+ ```
+ echo $PATH
+ ```
+ 
+ 
 
  
  

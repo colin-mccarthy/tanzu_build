@@ -122,7 +122,18 @@ Download the kp CLI for your operating system from the Tanzu Build Service page 
 ```
 pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
 ```
-  
 
-https://docs.pivotal.io/build-service/1-2/installing.html
 
+Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.
+ 
+``
+ mkdir build
+ cd build
+ 
+ pivnet download-product-files --product-slug='tbs-dependencies' --release-version='100.0.170' --product-file-id=1044254
+ ```
+
+
+  ## Build service install docs
+ 
+ https://docs.pivotal.io/build-service/1-2/installing.html

@@ -97,8 +97,10 @@ Exception: When using Dockerhub as your registry target, only use your DockerHub
  
  ```
  kp clusterbuilder list
- ```
  
+
+ zsh: command not found: kp
+ ```
  
  
  

@@ -7,10 +7,14 @@ https://docs.pivotal.io/build-service/1-2/installing.html
  ## Carvel 🔧
 
 ```
-    wget -O- https://carvel.dev/install.sh | bash
-    # Verify that all of the tools are installed and working.
-    ytt version && kapp version && kbld version && kwt version && imgpkg version
- ``` 
+wget -O- https://carvel.dev/install.sh | bash
+```
+
+Verify that all of the tools are installed and working.
+
+```
+ytt version && kapp version && kbld version && kwt version && imgpkg version
+``` 
 
  ## Pivnet 🔧
  

@@ -87,6 +87,22 @@ Exception: When using Dockerhub as your registry target, only use your DockerHub
  
  
  
+ Download the kp binary from the Tanzu Build Service page on Tanzu Network.
+ 
+ ```
+ pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
+ ```
+ 
+ List the cluster builders available in your installation:
+ 
+ ```
+ kp clusterbuilder list
+ ```
+ 
+ 
+ 
+ 
+ 
    ## errors
  
  ```

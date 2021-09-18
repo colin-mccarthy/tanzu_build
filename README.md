@@ -95,6 +95,10 @@ kind delete cluster
 
 # Installing Tanzu Build Service
 
+ ## build service install docs
+
+https://docs.pivotal.io/build-service/1-2/installing.html
+
  ## carvel
 
 ```
@@ -126,7 +130,7 @@ pivnet download-product-files --product-slug='build-service' --release-version='
 
 Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.
  
-``
+```
  mkdir build
  cd build
  
@@ -134,6 +138,3 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  ```
 
 
-  ## Build service install docs
- 
- https://docs.pivotal.io/build-service/1-2/installing.html

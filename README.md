@@ -95,6 +95,14 @@ kind delete cluster
 
 # Installing Tanzu Build Service
 
+ ## carvel
+
+```
+    wget -O- https://carvel.dev/install.sh | bash
+    # Verify that all of the tools are installed and working.
+    ytt version && kapp version && kbld version && kwt version && imgpkg version
+ ``` 
+
  ## pivnet
  
  https://github.com/pivotal-cf/pivnet-cli
@@ -112,11 +120,7 @@ brew install pivotal/tap/pivnet-cli
 ```
 
 
-```
-    wget -O- https://carvel.dev/install.sh | bash
-    # Verify that all of the tools are installed and working.
-    ytt version && kapp version && kbld version && kwt version && imgpkg version
- ```   
+  
 
 https://docs.pivotal.io/build-service/1-2/installing.html
 

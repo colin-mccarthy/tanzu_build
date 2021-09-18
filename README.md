@@ -83,7 +83,17 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  Note: This is identical to the IMAGE-REPOSITORY argument provided during imgpkg relocation command. 
  
  
-Exception: When using Dockerhub as your registry target, only use your DockerHub account for this value. For example, my-dockerhub-account (without /build-service). Otherwise, you will encounter an error similar to: 
+Exception: When using Dockerhub as your registry target, only use your DockerHub account for this value. For example, my-dockerhub-account (without /build-service). Otherwise, you will encounter an error similar to:
+ 
+ 
+ 
+ ## verify
+ 
+ Ensure that the kpack controller & webhook have a status of Running using kubectl get.
+ 
+ ```
+ kubectl get pods --namespace kpack --watch
+ ```
  
  
  
@@ -93,7 +103,7 @@ Exception: When using Dockerhub as your registry target, only use your DockerHub
  pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
  ```
  
- List the cluster builders available in your installation:
+  🚨List the cluster builders available in your installation:🚨
  
  ```
  kp clusterbuilder list
@@ -105,7 +115,7 @@ Exception: When using Dockerhub as your registry target, only use your DockerHub
  
  
  
-   ## errors
+   ## 🚨errors🚨
  
  ```
  kapp: Error: waiting on reconcile tanzunetdependencyupdater/dependency-updater (buildservice.tanzu.vmware.com/v1alpha1) namespace: build-service:

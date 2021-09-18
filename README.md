@@ -67,3 +67,22 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  imgpkg pull -b "<IMAGE-REPOSITORY>:<TBS-VERSION>" -o /tmp/bundle
  ```
  
+Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterStacks, ClusterStores, ClusterBuilders, and the CNB Lifecycle from TanzuNet automatically. Enabling this feature will keep Images up to date with the latest security patches and fixes. To enable this feature, pass in your TanzuNet credentials when running the install command below:
+ 
+ ```
+ ytt -f /tmp/bundle/values.yaml \
+    -f /tmp/bundle/config/ \
+    -v docker_repository='<IMAGE-REPOSITORY>' \
+    -v docker_username='<REGISTRY-USERNAME>' \
+    -v docker_password='<REGISTRY-PASSWORD>' \
+    -v tanzunet_username='<TANZUNET-USERNAME>' \
+    -v tanzunet_password='<TANZUNET-PASSWORD>' \
+    | kbld -f /tmp/bundle/.imgpkg/images.yml -f- \
+    | kapp deploy -a tanzu-build-service -f- -y
+ ```
+ 
+ 
+ ```
+ kapp: Error: waiting on reconcile tanzunetdependencyupdater/dependency-updater (buildservice.tanzu.vmware.com/v1alpha1) namespace: build-service:
+  Finished unsuccessfully (Encountered failure condition Ready == False: CannotImportDescriptor (message: GET https://registry.pivotal.io/v2/tbs-dependencies/bundle/manifests/100.0.170: UNAUTHORIZED: unauthorized to access repository: tbs-dependencies/bundle, action: pull: unauthorized to access repository: tbs-dependencies/bundle, action: pull))
+```

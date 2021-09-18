@@ -95,9 +95,20 @@ kind delete cluster
 
 # Installing Tanzu Build Service
 
-```
+ ## pivnet
+ 
+ ```
 brew install pivotal/tap/pivnet-cli
 ```
+``` 
+ curl -X POST https://network.tanzu.vmware.com/api/v2/authentication/access_tokens -d '{"refresh_token":"abc123"}'
+```
+
+
+``` 
+ curl -X GET https://network.tanzu.vmware.com/api/v2/authentication -H "Authorization: Bearer access_token" 
+```
+
 
 ```
     wget -O- https://carvel.dev/install.sh | bash

@@ -81,6 +81,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
     | kapp deploy -a tanzu-build-service -f- -y
  ```
  
+ Exception: When using Dockerhub as your registry target, only use your DockerHub account for this value. For example, my-dockerhub-account (without /build-service). Otherwise, you will encounter an error similar to: 
  
  ```
  kapp: Error: waiting on reconcile tanzunetdependencyupdater/dependency-updater (buildservice.tanzu.vmware.com/v1alpha1) namespace: build-service:

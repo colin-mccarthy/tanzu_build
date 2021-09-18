@@ -110,13 +110,11 @@ kind delete cluster
 ```
 brew install pivotal/tap/pivnet-cli
 ```
-``` 
- curl -X POST https://network.tanzu.vmware.com/api/v2/authentication/access_tokens -d '{"refresh_token":"abc123"}'
-```
 
+https://network.tanzu.vmware.com/docs/api#how-to-authenticate <-- get "refresh token" from your profile docs found here.
 
 ``` 
- curl -X GET https://network.tanzu.vmware.com/api/v2/authentication -H "Authorization: Bearer access_token" 
+pivnet login --api-token='my-api-token'
 ```
 
 

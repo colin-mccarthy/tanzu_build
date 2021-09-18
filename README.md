@@ -4,7 +4,7 @@
 
 https://docs.pivotal.io/build-service/1-2/installing.html
 
- ## carvel
+ ## Carvel 🔧
 
 ```
     wget -O- https://carvel.dev/install.sh | bash
@@ -12,7 +12,7 @@ https://docs.pivotal.io/build-service/1-2/installing.html
     ytt version && kapp version && kbld version && kwt version && imgpkg version
  ``` 
 
- ## pivnet
+ ## Pivnet 🔧
  
  https://github.com/pivotal-cf/pivnet-cli
  
@@ -42,7 +42,7 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  pivnet download-product-files --product-slug='tbs-dependencies' --release-version='100.0.170' --product-file-id=1044254
  ```
 
- ## Relocate Images to a Registry
+ ## Relocate Images to a Registry 🔧
  
  
  ```
@@ -57,7 +57,7 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  imgpkg copy -b "registry.pivotal.io/build-service/bundle:<TBS-VERSION>" --to-repo <IMAGE-REPOSITORY>
  ```
   
-  ## Install Tanzu Build Service Public Registry
+  ## Install Tanzu Build Service Public Registry 🔧
  
  Pull the Tanzu Build Service bundle image locally using imgpkg.
  
@@ -87,7 +87,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  
  
  
- ## verify
+ ## Verify the install 🔧
  
  Ensure that the kpack controller & webhook have a status of Running using kubectl get.
  

@@ -23,7 +23,7 @@ brew install pivotal/tap/pivnet-cli
 https://network.tanzu.vmware.com/docs/api#how-to-authenticate <-- get "refresh token" from your profile docs found here.
 
 ``` 
-pivnet login --api-token='my-api-token'
+pivnet login --api-token='<refresh token>'
 ```
 
 Download the kp CLI for your operating system from the Tanzu Build Service page on Tanzu Network

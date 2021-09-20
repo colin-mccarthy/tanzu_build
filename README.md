@@ -167,7 +167,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
  
  
-## cretae an image 
+## create an image 
  
 ``` 
 kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main

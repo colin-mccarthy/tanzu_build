@@ -41,20 +41,19 @@ Download the kp CLI for your operating system from the Tanzu Build Service page 
 pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
 ```
 
-🔍 Try to execute the file, so your Mac will open the security settings..  
+🔍 For Mac users: Try to execute the file, so your Mac will open the security settings.. 
+🔍 Then allow the file to be opened.
  ```
  sudo ./kp-darwin-0.2.0 
  ```
-🔍 Then allow the file to be opened in you Mac settings.
+
 
  
-🔍 Then move the file to your PATH
+🔍 Note: Move the file to your PATH
 
  ```
  echo $PATH
- ```
  
- ```
  mv ./kp-darwin-0.2.0 /usr/local/bin
  ```
 

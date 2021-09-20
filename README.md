@@ -133,7 +133,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  
  
  
- ## Download the kp binary from the Tanzu Build Service page on Tanzu Network.
+ ## Download the kp binary from the Tanzu Build Service page on Tanzu Network 🔧
  
  ```
  pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
@@ -148,7 +148,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
   
  
-## Create a secret with container repo creds
+## Create a secret with container repo creds 🔧
  
  ```
  kp secret create my-registry-creds --dockerhub <username>
@@ -167,7 +167,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
  
  
-## create an image 
+## create an image 🔧
  
 ``` 
 kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main

@@ -179,7 +179,9 @@ Created secret with container repo creds -- not sure if this was needed.
 🚨Error: the server could not find the requested resource (post clusterstores.kpack.io)🚨
  
  
+``` 
+kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main
+``` 
  
-
  
- 
+view default namespace - to see pods spinning up 

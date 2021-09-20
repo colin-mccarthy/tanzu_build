@@ -26,7 +26,7 @@ ytt version && kapp version && kbld version && kwt version && imgpkg version
 brew install pivotal/tap/pivnet-cli
 ```
 
-https://network.tanzu.vmware.com/docs/api#how-to-authenticate <-- get "refresh token" from your profile docs found here.
+https://network.tanzu.vmware.com/docs/api#how-to-authenticate <-- get "refresh token" from your profile, docs found here.
 
 ``` 
 pivnet login --api-token='<refresh token>'

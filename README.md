@@ -154,13 +154,27 @@ kp clusterbuilder list
  kp import -f descriptor-100.0.170.yaml
  ```
  
-🚨 Error: failed to get default repository: failed to get default repository: use "kp config default-repository" to set 
+🚨 Error: failed to get default repository: failed to get default repository: use "kp config default-repository" to set 🚨
  
+ 
+ 
+Created secret with container repo creds 
  
  ```
  kp secret create my-registry-creds --dockerhub <username>
  ```
 
+ Set defaualt repository
+ 
+ ```
+ kp config default-repository <dockerhub-username>
+ ```
+ 
+ 
+ 
+
+ 
+ 
  
  
  ## 🚨errors🚨

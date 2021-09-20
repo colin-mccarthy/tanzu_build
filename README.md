@@ -111,6 +111,8 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
  ```
  
+ Try to execute the file, so your Mac will open the security settings..
+ 
  List the cluster builders available in your installation:
  
  ```

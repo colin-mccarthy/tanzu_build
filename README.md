@@ -48,7 +48,7 @@ pivnet download-product-files --product-slug='build-service' --release-version='
 🔍 Then allow the file to be opened in you Mac settings.
 
  
-Then move the file to your PATH
+🔍 Then move the file to your PATH
 
  ```
  echo $PATH

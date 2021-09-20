@@ -36,7 +36,7 @@ pivnet login --api-token='<refresh token>'
 
  
  
- ## kp-cli
+ ## kp-cli 🔧
  
 Download the kp CLI for your operating system from the Tanzu Build Service page on Tanzu Network
 
@@ -67,7 +67,7 @@ kp version
 ```
 
 
-## Dependency Descriptor file
+## Dependency Descriptor file 🔧
 Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.
  
 ```

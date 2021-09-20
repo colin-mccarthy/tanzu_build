@@ -158,7 +158,7 @@ kp clusterbuilder list
  
  
  
-Created secret with container repo creds 
+Created secret with container repo creds -- not sure if this was needed.
  
  ```
  kp secret create my-registry-creds --dockerhub <username>
@@ -170,9 +170,13 @@ Created secret with container repo creds
  kp config default-repository <dockerhub-username>
  ```
  
+ Import descriptor file
  
+ ```
+ kp import -f descriptor-100.0.170.yaml
+ ```
  
-
+🚨Error: the server could not find the requested resource (post clusterstores.kpack.io)🚨
  
  
  

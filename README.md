@@ -148,9 +148,13 @@ kp
 kp clusterbuilder list
 ```
 
-🚨 Error: failed to get default repository: failed to get default repository: use "kp config default-repository" to set 🚨
+
  
  
+ ## 🚨errors🚨
  
+```
+Error: failed to get default repository: failed to get default repository: use "kp config default-repository" to set
+```
  
  

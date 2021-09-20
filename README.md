@@ -66,15 +66,6 @@ kp version
 ```
 
 
-## Dependency Descriptor file 🔧
-Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.
- 
-```
- mkdir build
- cd build
- 
- pivnet download-product-files --product-slug='tbs-dependencies' --release-version='100.0.170' --product-file-id=1044254
- ```
 
  ## Relocate Images to a Registry 🔧
  
@@ -150,6 +141,18 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  
  ```
  kp config default-repository <dockerhub-username>
+ ```
+ 
+ 
+ 
+## Dependency Descriptor file 🔧
+Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.
+ 
+```
+ mkdir build
+ cd build
+ 
+ pivnet download-product-files --product-slug='tbs-dependencies' --release-version='100.0.170' --product-file-id=1044254
  ```
  
  Import descriptor file

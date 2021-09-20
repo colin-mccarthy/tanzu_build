@@ -22,16 +22,20 @@ ytt version && kapp version && kbld version && kwt version && imgpkg version
  
  https://network.pivotal.io/products/build-service/
  
+ 
+Install pivnet-cli 
 ```
 brew install pivotal/tap/pivnet-cli
-```
+``` 
 
-Get "refresh token" from your profile docs found here --> https://network.tanzu.vmware.com/docs/api#how-to-authenticate 
+Login with pivnet
 ``` 
 pivnet login --api-token='<refresh token>'
 ```
+🔍 Get "refresh token" from your profile docs found here --> https://network.tanzu.vmware.com/docs/api#how-to-authenticate
 
-
+ 
+ 
  ## kp-cli
  
 Download the kp CLI for your operating system from the Tanzu Build Service page on Tanzu Network

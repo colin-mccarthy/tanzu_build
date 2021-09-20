@@ -32,7 +32,7 @@ Login with pivnet
 ``` 
 pivnet login --api-token='<refresh token>'
 ```
-🔍 Get "refresh token" from your profile docs found here --> https://network.tanzu.vmware.com/docs/api#how-to-authenticate
+🔍 Get "refresh token" from your Tanzu Net profile: docs found here --> https://network.tanzu.vmware.com/docs/api#how-to-authenticate
 
  
  

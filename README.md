@@ -1,6 +1,6 @@
 # Installing Tanzu Build Service
 
- ## build service install docs
+ ## Build service install docs
 
 https://docs.pivotal.io/build-service/1-2/installing.html
 
@@ -167,7 +167,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
  
  
-## create an image 🔧
+## Create an image 🔧
  
 ``` 
 kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main

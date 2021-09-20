@@ -32,13 +32,40 @@ https://network.tanzu.vmware.com/docs/api#how-to-authenticate <-- get "refresh t
 pivnet login --api-token='<refresh token>'
 ```
 
+
+ ## kp-cli
+ 
 Download the kp CLI for your operating system from the Tanzu Build Service page on Tanzu Network
 
 ```
 pivnet download-product-files --product-slug='build-service' --release-version='1.2.2' --product-file-id=1000629
 ```
 
+🔍 Try to execute the file, so your Mac will open the security settings..  
+ ```
+ sudo ./kp-darwin-0.2.0 
+ ```
+🔍 Then allow the file to be opened in you Mac settings.
 
+ 
+Then move the file to your PATH
+
+ ```
+ echo $PATH
+ ```
+ 
+ ```
+ mv ./kp-darwin-0.2.0 /usr/local/bin
+ ```
+
+Verify the kp-cli is working
+
+```
+kp version
+```
+
+
+## Dependency Descriptor file
 Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.
  
 ```
@@ -120,49 +147,23 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
  kp clusterbuilder list
  ```
-
-🚨zsh: command not found: kp🚨
  
- ```
- go get github.com/vmware-tanzu/kpack-cli
- ```
- 
- ```
- go env GOPATH
- ```
-
-```
-% go env GOPATH
-/Users/comccarthy/go
-% ls /Users/comccarthy/go
-bin	pkg
-% ls /Users/comccarthy/go/bin 
-kp
- ```
- 
- ```
- export PATH=$PATH:/Users/comccarthy/go/bin
- ```
- 
- ```
- echo $PATH
- ```
  
 ```
 kp clusterbuilder list
 ```
 
- Import descriptor file
+Import descriptor file
  
- ```
- kp import -f descriptor-100.0.170.yaml
- ```
+```
+kp import -f descriptor-100.0.170.yaml
+```
  
 🚨 Error: failed to get default repository: failed to get default repository: use "kp config default-repository" to set 🚨
  
  
  
-Created secret with container repo creds -- not sure if this was needed.
+Create a secret with container repo creds
  
  ```
  kp secret create my-registry-creds --dockerhub <username>
@@ -180,6 +181,8 @@ Created secret with container repo creds -- not sure if this was needed.
  kp import -f descriptor-100.0.170.yaml
  ```
  
+ 
+## cretae an image 
  
 ``` 
 kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main

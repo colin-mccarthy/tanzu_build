@@ -164,7 +164,7 @@ Created secret with container repo creds
  kp secret create my-registry-creds --dockerhub <username>
  ```
 
- Set defaualt repository
+ Set default repository
  
  ```
  kp config default-repository <dockerhub-username>

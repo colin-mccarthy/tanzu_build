@@ -121,10 +121,10 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  Ensure that the kpack controller & webhook have a status of Running using kubectl get.
  
  ```
- kubectl get pods --namespace kpack --watch
+ kubectl get pods -n kpack
  ```
  
- You can verify the  dependency updater was created in the build-service namespace.
+ Ensure that the dependency updater was created in the build-service namespace.
 
  ```
  kubectl get pods -n build-service

@@ -1,4 +1,4 @@
 
-We publish and maintain the kp docker image: https://hub.docker.com/r/kpack/kp.
+We publish and maintain the kp Docker image: https://hub.docker.com/r/kpack/kp.
 
-kpack concourse resource: https://github.com/vmware-tanzu/concourse-kpack-resource.
+kpack Concourse resource: https://github.com/vmware-tanzu/concourse-kpack-resource.

@@ -114,7 +114,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  build-service/tanzu-buildpacks_go' are available locally
  ```
  
- 
+
  
  ## Verify the install 🔧
  
@@ -123,6 +123,12 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
  kubectl get pods --namespace kpack --watch
  ```
+ 
+ You can verify the  dependency updater was created in the build-service namespace.
+
+ ```
+ kubectl get pods -n build-service
+ ``` 
  
  List the cluster builders available in your installation:
  

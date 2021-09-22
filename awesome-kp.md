@@ -11,3 +11,5 @@ kpdemo GitHub: https://github.com/matthewmcnew/kpdemo
 Pack https://github.com/buildpacks/pack
 
 Azure Devops example: https://github.com/ryan-a-baker/tanzu-build-service-cicd-examples/tree/master/azure-devops-harbor
+
+New Stack Article: https://thenewstack.io/container-images-the-easy-way-with-cloud-native-buildpacks/

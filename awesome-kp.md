@@ -15,3 +15,5 @@ Azure Devops example: https://github.com/ryan-a-baker/tanzu-build-service-cicd-e
 New Stack Article: https://thenewstack.io/container-images-the-easy-way-with-cloud-native-buildpacks/
 
 Kpack, oh kpack, wherefore art thou build logs? = https://www.starkandwayne.com/blog/kpack-viewing-build-logs/
+
+Taking kpack, a Kubernetes Native Container Build Service for a test drive = https://theblasfrompas.blogspot.com/2019/09/taking-kpack-kubernetes-native.html

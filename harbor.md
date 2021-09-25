@@ -37,7 +37,7 @@ helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.dom
 ```
 
 ```
-k get pods -n harbor
+kubectl get pods -n harbor
 ```
 
 ## Add a hostname to your /etc/hosts file 🔧

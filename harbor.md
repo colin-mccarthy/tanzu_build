@@ -1,4 +1,4 @@
-# Install Harbor on KinD
+# Installing Harbor on KinD
 
 Followed this blog
 

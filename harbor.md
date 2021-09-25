@@ -6,7 +6,7 @@ https://serverascode.com/2020/04/28/local-harbor-install.html
 
 
 
-## Contour Ingress
+## Contour Ingress 🔧
 
 ```
 kubectl apply -f https://projectcontour.io/quickstart/contour.yaml
@@ -20,7 +20,7 @@ kubectl patch daemonsets -n projectcontour envoy -p '{"spec":{"template":{"spec"
 kubectl get pods -n projectcontour
 ```
 
-## Helm
+## Helm 🔧
 
 ```
 brew install helm
@@ -40,13 +40,13 @@ helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.dom
 k get pods
 ```
 
-## Add a hostname to your /etc/hosts file
+## Add a hostname to your /etc/hosts file 🔧
 
 ```
 127.0.0.1 core.harbor.domain
 ```
 
-## Now open a browser session to http://core.harbor.domain/harbor
+## Now open a browser session to http://core.harbor.domain/harbor 🔧
 
 Default credentails
 ```

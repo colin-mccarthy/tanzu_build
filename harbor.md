@@ -31,7 +31,7 @@ helm repo add harbor https://helm.goharbor.io
 ```
 
 
-Added externalURL do to not being able to log in with default UN and PW
+🔍 Added externalURL flag do to not being able to log in with default UN and PW
 ```
 helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.domain/harbor
 ```

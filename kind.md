@@ -6,13 +6,13 @@ Followed this blog
 https://serverascode.com/2020/04/28/local-harbor-install.html
 
 
-## Install KinD
+## Install KinD 🔧
 
 ```
 brew install kind
 ```
 
-## Create Cluster with use of “extraPortMappings”.
+## Create Cluster with use of “extraPortMappings” 🔧
 
 ```
 cat <<EOF | kind create cluster --config=-

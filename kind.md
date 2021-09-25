@@ -14,8 +14,9 @@ brew install kind
 
 ## Create Cluster with use of “extraPortMappings” 🔧
 
+
+kind.yaml
 ```
-cat <<EOF | kind create cluster --config=-
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
@@ -34,6 +35,10 @@ nodes:
   - containerPort: 443
     hostPort: 443
     protocol: TCP
+```
+
+```
+kind create cluster --config=kind.yaml 
 ```
 
 ```

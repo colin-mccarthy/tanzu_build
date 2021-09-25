@@ -1,6 +1,11 @@
 # Setup KinD
 
 
+Followed this blog
+
+https://serverascode.com/2020/04/28/local-harbor-install.html
+
+
 ## Install KinD
 
 ```
@@ -30,3 +35,9 @@ nodes:
     hostPort: 443
     protocol: TCP
 ```
+
+```
+kubectl get nodes
+```
+
+

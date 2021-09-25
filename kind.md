@@ -15,7 +15,7 @@ brew install kind
 ## Create Cluster with use of “extraPortMappings” 🔧
 
 
-kind.yaml
+kind.yaml <-- create this file locally
 ```
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

@@ -12,7 +12,7 @@ https://serverascode.com/2020/04/28/local-harbor-install.html
 brew install kind
 ```
 
-## Create Cluster with use of “extraPortMappings” 🔧
+## Create Cluster with use of “extraPortMappings” for Harbor 🔧
 
 
 kind.yaml <-- create this file locally

@@ -28,11 +28,13 @@ Install pivnet-cli
 brew install pivotal/tap/pivnet-cli
 ``` 
 
+🔍 Get "refresh token" from your Tanzu Net profile: docs found here --> https://network.tanzu.vmware.com/docs/api#how-to-authenticate
+
 Login with pivnet
 ``` 
 pivnet login --api-token='<refresh token>'
 ```
-🔍 Get "refresh token" from your Tanzu Net profile: docs found here --> https://network.tanzu.vmware.com/docs/api#how-to-authenticate
+
 
  
  

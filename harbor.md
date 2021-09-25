@@ -1,4 +1,4 @@
-# Install Harbor on K3s
+# Install Harbor on KinD
 
 Followed this blog
 

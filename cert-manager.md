@@ -1,8 +1,4 @@
-```
-helm install --set ingress.annotations."cert-manager.io/cluster-issuer"=clusterissuer-self-signed
-```
-
-
+Install cluster manager via Helm
 
  K apply -f 
 ```
@@ -14,3 +10,9 @@ spec:
   selfSigned: {}
 ```
 
+
+
+
+```
+helm install --set ingress.annotations."cert-manager.io/cluster-issuer"=clusterissuer-self-signed
+```

@@ -16,3 +16,8 @@ spec:
 ```
 helm install --set ingress.annotations."cert-manager.io/cluster-issuer"=clusterissuer-self-signed
 ```
+or
+
+```
+helm install --set expose.ingress.annotations."cert-manager.io/cluster-issuer"=clusterissuer-self-signed harbor harbor/harbor
+```

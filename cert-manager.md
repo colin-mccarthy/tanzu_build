@@ -21,3 +21,6 @@ or
 ```
 helm install --set expose.ingress.annotations."cert-manager.io/cluster-issuer"=clusterissuer-self-signed harbor harbor/harbor
 ```
+via 
+
+https://github.com/goharbor/harbor-helm/blob/master/values.yaml

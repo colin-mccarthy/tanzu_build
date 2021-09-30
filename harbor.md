@@ -31,10 +31,10 @@ helm repo add harbor https://helm.goharbor.io
 ```
 
 
-🔍 Added externalURL flag to be able to log in with default UN and PW
-```
-helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.domain/harbor --namespace harbor --create-namespace
-```
+#🔍 Added externalURL flag to be able to log in with default UN and PW
+#```
+#helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.domain/harbor --namespace harbor --create-namespace
+#```
 
 🔍 For cert-manager installs add ingress.annotations
 ```

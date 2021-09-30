@@ -170,7 +170,9 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
 ```
  mkdir build
  cd build
+```
  
+ ```
  pivnet download-product-files --product-slug='tbs-dependencies' --release-version='100.0.170' --product-file-id=1044254
  ```
  

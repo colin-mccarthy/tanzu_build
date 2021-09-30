@@ -29,7 +29,7 @@
     }
   },
   "insecure-registries": [
-    "registry.ingress.haas-417.pez.vmware.com:443"
+    "core.harbor.domain:443"
   ]
 }
 ```

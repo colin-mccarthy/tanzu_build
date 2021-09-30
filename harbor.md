@@ -53,7 +53,13 @@ kubectl get pods -n harbor
 127.0.0.1 core.harbor.domain
 ```
 
-## Now open a browser session to http://core.harbor.domain/harbor or https://core.harbor.domain/harbor 🔧
+## Now open a browser session🔧
+
+http://core.harbor.domain/harbor
+
+https://core.harbor.domain/harbor
+
+
 
 Default credentails
 ```

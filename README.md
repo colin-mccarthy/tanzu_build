@@ -156,15 +156,11 @@ https://github.com/vmware-tanzu/kpack-cli/blob/main/docs/kp_secret_create.md
  ```
  
  
-
- Set default repository
- https://github.com/vmware-tanzu/kpack-cli/blob/main/docs/kp_config_default-repository.md
+🔍 "my-registry-creds" and "--registry-user" to create credentials for other registries. Use the "REGISTRY_PASSWORD" env var to bypass the password prompt.
  
  ```
- kp config default-repository <dockerhub-username>
+ kp secret create my-registry-cred --registry <example-registry.io> --registry-user <my-registry-user>
  ```
- 
- 
  
 ## Dependency Descriptor file 🔧
 Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.

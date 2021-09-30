@@ -16,7 +16,7 @@ $ helm install \
   --set installCRDs=true
 ``` 
 
-Verift install
+Verify install
 
 ```
 kubectl get pods -n cert-manager

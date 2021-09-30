@@ -30,12 +30,13 @@ brew install helm
 helm repo add harbor https://helm.goharbor.io
 ```
 
+## http
+🔍 Added externalURL flag to be able to log in with default UN and PW
+```
+helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.domain/harbor --namespace harbor --create-namespace
+```
 
-#🔍 Added externalURL flag to be able to log in with default UN and PW
-#```
-#helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.domain/harbor --namespace harbor --create-namespace
-#```
-
+## https
 🔍 For cert-manager installs add ingress.annotations
 ```
 helm install local-harbor harbor/harbor --set ingress.annotations."cert-manager.io/cluster-issuer"=clusterissuer-self-signed --namespace harbor --create-namespace

@@ -190,4 +190,12 @@ kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/
 ``` 
  
  
-view default namespace - to see pods spinning up 
+View default namespace - to see pods spinning up 
+ 
+ ```
+ kubectl get pods
+ ```
+ 
+ ```
+ kp image list
+ ```

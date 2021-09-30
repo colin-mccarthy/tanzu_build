@@ -150,12 +150,14 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
 
 Set registry creds
 https://github.com/vmware-tanzu/kpack-cli/blob/main/docs/kp_secret_create.md
+
+### DockeHub
  
  ```
  kp secret create my-registry-creds --dockerhub <username>
  ```
  
- 
+ ### Harbor
 🔍 "my-registry-creds" and "--registry-user" to create credentials for other registries. Use the "REGISTRY_PASSWORD" env var to bypass the password prompt.
  
  ```

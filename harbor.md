@@ -36,6 +36,11 @@ helm repo add harbor https://helm.goharbor.io
 helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.domain/harbor --namespace harbor --create-namespace
 ```
 
+🔍 For cert-manager installs add ingress.annotations
+```
+helm install local-harbor harbor/harbor --set ingress.annotations."cert-manager.io/cluster-issuer"=clusterissuer-self-signed externalURL=http://core.harbor.domain/harbor --namespace harbor --create-namespace
+```
+
 ```
 kubectl get pods -n harbor
 ```

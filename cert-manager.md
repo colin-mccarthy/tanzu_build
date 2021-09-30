@@ -31,3 +31,10 @@ helm install --set expose.ingress.annotations."cert-manager.io/cluster-issuer"=c
 via 
 
 https://github.com/goharbor/harbor-helm/blob/master/values.yaml
+
+
+
+
+in Harbor download image registry cert
+
+

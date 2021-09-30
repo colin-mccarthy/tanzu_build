@@ -16,8 +16,12 @@ $ helm install \
   --set installCRDs=true
 ```  
 
+## Create ClusterIssuer
 
- K apply -f 
+```
+kubectl apply -f clusterIssuer.yaml
+```
+ 
 ```
 kind: ClusterIssuer
 apiVersion: cert-manager.io/v1

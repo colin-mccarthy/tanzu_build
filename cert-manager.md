@@ -1,4 +1,4 @@
-## Install cluster manager via Helm
+## Install cert-manager via Helm
 ```
 helm repo add jetstack https://charts.jetstack.io
 ```

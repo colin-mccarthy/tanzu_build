@@ -1,4 +1,12 @@
+## Prerequisites:
 
+Place the clusterIssuer.yaml file in the same directory as the script.
+
+Install helm
+
+Modify your Docker Desktop setting to include the insecure-registries section shown in docker.md
+
+## script
 
 ```
 #!/bin/bash

@@ -6,6 +6,8 @@ Install helm
 
 Modify your Docker Desktop setting to include the insecure-registries section shown in docker.md
 
+Add the hostname to your /etc/hosts file  ```127.0.0.1 core.harbor.domain```
+
 ## script
 
 ```

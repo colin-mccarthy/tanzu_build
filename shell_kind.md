@@ -11,7 +11,7 @@ Modify your Docker Desktop setting to include the insecure-registries section sh
 ```
 #!/bin/bash
 #
-# Starts a Kind cluster and runs a command against it.
+# 
 #
 
 set -oe errexit

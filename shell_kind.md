@@ -130,3 +130,19 @@ kubectl get pods -n harbor
 echo "> 😊😊 done!"
 
 ```
+
+
+## Now open a browser session🔧
+
+http://core.harbor.domain/harbor
+
+https://core.harbor.domain/harbor
+
+
+
+Default credentails
+```
+login: admin
+pw: Harbor12345
+```
+

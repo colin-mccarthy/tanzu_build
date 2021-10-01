@@ -134,10 +134,7 @@ echo "> 😊😊 done!"
 
 ## Now open a browser session🔧
 
-http://core.harbor.domain/harbor
-
 https://core.harbor.domain/harbor
-
 
 
 Default credentails

@@ -1,6 +1,6 @@
 ## Prerequisites:
 
-Place the clusterIssuer.yaml file in the same directory as the script.
+Place the ```clusterIssuer.yaml``` file in the same directory as the script.
 
 Install helm
 

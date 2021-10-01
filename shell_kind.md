@@ -4,7 +4,7 @@ Place the ```clusterIssuer.yaml``` file in the same directory as the script.
 
 Install helm
 
-Modify your Docker Desktop setting to include the insecure-registries section shown in docker.md
+Modify your Docker Desktop JSON config file to include the insecure-registries section shown in docker.md
 
 Add the hostname to your /etc/hosts file  ```127.0.0.1 core.harbor.domain```
 

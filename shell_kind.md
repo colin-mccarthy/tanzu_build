@@ -1,3 +1,6 @@
+
+
+```
 #!/bin/bash
 #
 # Starts a Kind cluster and runs a command against it.
@@ -80,7 +83,7 @@ kubectl get ClusterIssuer
 ##
 
 
-```
+
 echo "> 😊😊 Install Contour"📦
 
 kubectl apply -f https://projectcontour.io/quickstart/contour.yaml

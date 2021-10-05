@@ -117,7 +117,7 @@ echo "> 😊😊 Install Harbor"📦
 
 helm repo add harbor https://helm.goharbor.io
 
-helm install local-harbor harbor/harbor --set externalURL=http://core.harbor.domain/harbor --namespace harbor --create-namespace
+helm install local-harbor harbor/harbor --namespace harbor --create-namespace
 
 echo "> 😊😊 Verify Harbor install"
 

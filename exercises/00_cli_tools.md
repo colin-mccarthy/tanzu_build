@@ -30,7 +30,7 @@ pivnet login --api-token='<refresh token>'
 
  
  
- ### Download the kp binary from the Tanzu Build Service page on Tanzu Network 🔧
+ ### Install KP-CLI 🔧
  
 Download the kp CLI for your operating system from the Tanzu Build Service page on Tanzu Network
 

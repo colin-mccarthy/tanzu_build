@@ -88,8 +88,6 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
     | kbld -f /tmp/bundle/.imgpkg/images.yml -f- \
     | kapp deploy -a tanzu-build-service -f- -y   
  ```
- 
-🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 Not Working
 
  
  ## Verify the install 🔧

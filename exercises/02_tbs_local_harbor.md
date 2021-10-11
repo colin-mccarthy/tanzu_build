@@ -52,7 +52,7 @@ Add the cert to the shared folder of your Kind container 🔧
 ```
 docker cp /tmp/ca.crt <CONTAINER ID>:/usr/local/share/ca-certificates
 
-docker exec -t <CONTAINER IDr> update-ca-certificates && systemctl restart containerd.service
+docker exec -t <CONTAINER ID> update-ca-certificates && systemctl restart containerd.service
 ```
 
 

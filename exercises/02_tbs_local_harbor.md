@@ -67,23 +67,20 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ytt -f /tmp/bundle/values.yaml \
     -f /tmp/bundle/config/ \
     -f /tmp/ca.crt \
-    -v docker_repository='<IMAGE-REPOSITORY>' \
-    -v docker_username='<REGISTRY-USERNAME>' \
-    -v docker_password='<REGISTRY-PASSWORD>' \
+    -v docker_repository='core.harbor.domain/build-service/build-service' \
+    -v docker_username='admin' \
+    -v docker_password='Harbor12345' \
     -v tanzunet_username='<TANZUNET-USERNAME>' \
     -v tanzunet_password='<TANZUNET-PASSWORD>' \
     | kbld -f /tmp/bundle/.imgpkg/images.yml -f- \
     | kapp deploy -a tanzu-build-service -f- -y
  ```
+ 
+ 
+ 
 🔍 Note: This is identical to the IMAGE-REPOSITORY argument provided during imgpkg relocation command. 
  
- 
-🔍 Exception: When using Dockerhub as your registry target, only use your DockerHub account for this value. For example, my-dockerhub-account (without /build-service). Otherwise, you will encounter an error similar to:
- ```
- Error: invalid credentials, ensure registry credentials for 'index.docker.io/my-dockerhub-account/
- build-service/tanzu-buildpacks_go' are available locally
- ```
- 
+
 
  
  ## Verify the install 🔧

@@ -160,3 +160,5 @@ https://vmtechie.blog/2021/09/11/code-to-container-with-tanzu-build-service/
 https://community.pivotal.io/s/article/kapp-controller-reconcile-fails-when-private-registry-uses-self-signed-certs?language=en_US
  
 https://github.com/kubernetes-sigs/kind/issues/110 <-- Kind insecure registries
+                                                       
+https://makk.es/blog/docker-registry-on-k8s/#the-complete-rundown-

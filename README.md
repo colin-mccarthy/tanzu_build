@@ -1,10 +1,13 @@
-# Installing Tanzu Build Service on KinD
+
 
  ## Build service install docs
 
 https://docs.pivotal.io/build-service/1-2/installing.html
 
- ## Carvel 🔧
+
+## Prerequisites: 🔧
+
+ ### Carvel 🔧
 
 ```
 wget -O- https://carvel.dev/install.sh | bash
@@ -16,7 +19,7 @@ Verify that all of the tools are installed and working.
 ytt version && kapp version && kbld version && kwt version && imgpkg version
 ``` 
 
- ## Pivnet 🔧
+ ### Pivnet 🔧
  
  https://github.com/pivotal-cf/pivnet-cli
  
@@ -38,7 +41,7 @@ pivnet login --api-token='<refresh token>'
 
  
  
- ## Download the kp binary from the Tanzu Build Service page on Tanzu Network 🔧
+ ### Download the kp binary from the Tanzu Build Service page on Tanzu Network 🔧
  
 Download the kp CLI for your operating system from the Tanzu Build Service page on Tanzu Network
 
@@ -74,7 +77,7 @@ Verify the kp-cli is working
 kp version
 ```
 
-
+# Installing Tanzu Build Service on KinD using DockerHub
 
  ## Relocate Images to a Registry 🔧
  
@@ -157,12 +160,7 @@ https://github.com/vmware-tanzu/kpack-cli/blob/main/docs/kp_secret_create.md
  kp secret create my-registry-creds --dockerhub <username>
  ```
  
- ### Harbor
-🔍 "my-registry-creds" and "--registry-user" to create credentials for other registries. Use the "REGISTRY_PASSWORD" env var to bypass the password prompt.
- 
- ```
- kp secret create my-registry-cred --registry <example-registry.io> --registry-user <my-registry-user>
- ```
+
  
 ## Dependency Descriptor file 🔧
 Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.

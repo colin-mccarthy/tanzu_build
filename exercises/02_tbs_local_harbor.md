@@ -25,4 +25,6 @@ https://github.com/vmware-tanzu/carvel-kapp-controller/issues/39
 https://vmtechie.blog/2021/09/11/code-to-container-with-tanzu-build-service/
 
 
+
+## download your ca.crt from the Harbor UI
 <img src="./screenshots/harbor_cert.png" width="450"> 

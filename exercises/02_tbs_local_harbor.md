@@ -76,7 +76,7 @@ docker exec -t <CONTAINER ID> update-ca-certificates && systemctl restart contai
  imgpkg pull -b "core.harbor.domain/build-service/build-service:1.2.2" -o /tmp/bundle --registry-ca-cert-path=/tmp/ca.crt 
  ```
  
-Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterStacks, ClusterStores, ClusterBuilders, and the CNB Lifecycle from TanzuNet automatically. Enabling this feature will keep Images up to date with the latest security patches and fixes. To enable this feature, pass in your TanzuNet credentials when running the install command below:
+## Install Tanzu Build Service by running the command below 🔧
  
  ```
  ytt -f /tmp/bundle/values.yaml \

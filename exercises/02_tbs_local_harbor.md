@@ -40,7 +40,7 @@ cp Desktop/<ca-5.crt> /tmp/ca.crt
 ```
 
  ```
- imgpkg copy -b "registry.pivotal.io/build-service/bundle:1.2.2" --to-repo core.harbor.domain/build-service/ --registry-ca-cert-path /tmp/ca.crt
+ imgpkg copy -b "registry.pivotal.io/build-service/bundle:1.2.2" --to-repo core.harbor.domain/build-service/build-service --registry-ca-cert-path=/tmp/ca.crt 
  ```
 
 ## References

@@ -52,7 +52,7 @@ cp Desktop/<ca-5.crt> /tmp/ca.crt
  
  
  
-  ## Install Tanzu Build Service with a Public Registry 🔧
+  ## Install Tanzu Build Service  🔧
  
  Pull the Tanzu Build Service bundle image locally using imgpkg.
  

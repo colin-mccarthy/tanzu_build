@@ -98,12 +98,57 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  ```
   
 
+
  
- ## 
- 
+ ## Create a secret with container repo creds 🔧
+
+Set registry creds
+https://github.com/vmware-tanzu/kpack-cli/blob/main/docs/kp_secret_create.md
+
+
+  
   ### Harbor
  🔍 "my-registry-creds" and "--registry-user" to create credentials for other registries. Use the "REGISTRY_PASSWORD" env var to bypass the password prompt.
  
+
+ 
+## Dependency Descriptor file 🔧
+Download the Dependency Descriptor file (descriptor-<version>.yaml) from the latest release on the Tanzu Build Service Dependencies page on Tanzu Network. This file contains paths to images that contain dependency resources Tanzu Build Service needs to execute image builds.
+ 
+```
+ mkdir build
+ cd build
+```
+ 
+ ```
+ pivnet download-product-files --product-slug='tbs-dependencies' --release-version='100.0.170' --product-file-id=1044254
+ ```
+ 
+ Import descriptor file
+ 
+ ```
+ kp import -f descriptor-100.0.170.yaml
+ ```
+ 
+ 
+## Create an image 🔧
+ 
+``` 
+kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main
+``` 
+ 
+ 
+View default namespace - to see pods spinning up 
+ 
+ ```
+ kubectl get pods
+ ```
+ 
+ ```
+ kp image list
+ ```
+
+
  
 
 ## References

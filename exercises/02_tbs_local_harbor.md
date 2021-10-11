@@ -70,15 +70,9 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
     -v docker_repository='core.harbor.domain/build-service/build-service' \
     -v docker_username='admin' \
     -v docker_password='Harbor12345' \
-    -v tanzunet_username='<TANZUNET-USERNAME>' \
-    -v tanzunet_password='<TANZUNET-PASSWORD>' \
     | kbld -f /tmp/bundle/.imgpkg/images.yml -f- \
-    | kapp deploy -a tanzu-build-service -f- -y
+    | kapp deploy -a tanzu-build-service -f- -y   
  ```
- 
- 
- 
-🔍 Note: This is identical to the IMAGE-REPOSITORY argument provided during imgpkg relocation command. 
  
 
 

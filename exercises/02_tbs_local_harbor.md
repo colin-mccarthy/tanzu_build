@@ -48,3 +48,5 @@ cp Desktop/<ca-5.crt> /tmp/ca.crt
 https://github.com/vmware-tanzu/carvel-kapp-controller/issues/39
 
 https://vmtechie.blog/2021/09/11/code-to-container-with-tanzu-build-service/
+
+https://community.pivotal.io/s/article/kapp-controller-reconcile-fails-when-private-registry-uses-self-signed-certs?language=en_US

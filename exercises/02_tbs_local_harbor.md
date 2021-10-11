@@ -19,3 +19,5 @@
 ```
 Error: Retried 5 times: Get "https://core.harbor.domain/v2/": x509: certificate signed by unknown authority
 ```
+
+https://github.com/vmware-tanzu/carvel-kapp-controller/issues/39

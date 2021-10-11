@@ -1,4 +1,4 @@
-# Install Tanzu Build Service using you local Harbor Registry
+# Install Tanzu Build Service using a local Harbor Registry
  
  
  In Harbor create a project named build-service 🔧

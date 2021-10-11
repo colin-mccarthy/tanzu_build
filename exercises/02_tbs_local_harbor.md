@@ -41,7 +41,7 @@ copy the cert to /tmp/ca.crt 🔧
 cp Desktop/<ca-5.crt> /tmp/ca.crt
 ```
 
-Find the <kind CONTAINER ID> 🔧
+Find your kind CONTAINER ID 🔧
  
 ```
 docker ps
@@ -50,9 +50,9 @@ docker ps
 Add the cert to the shared folder of your Kind container 🔧
  
 ```
-docker cp /tmp/ca.crt <kind CONTAINER ID>:/usr/local/share/ca-certificates
+docker cp /tmp/ca.crt <CONTAINER ID>:/usr/local/share/ca-certificates
 
-docker exec -t <kind CONTAINER IDr> update-ca-certificates && systemctl restart containerd.service
+docker exec -t <CONTAINER IDr> update-ca-certificates && systemctl restart containerd.service
 ```
 
 

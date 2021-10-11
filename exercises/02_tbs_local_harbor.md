@@ -27,9 +27,7 @@
  ```
 
 
-## 
-
-Download your Registry Certificate from the Harbor UI 🔧
+## Download your Registry Certificate from the Harbor UI 🔧
 
 <img src="./screenshots/harbor_cert.png" width="450"> 
 

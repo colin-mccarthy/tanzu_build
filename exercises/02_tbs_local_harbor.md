@@ -104,11 +104,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  kubectl get pods -n build-service
  ``` 
  
- List the cluster builders available in your installation:
- 
- ```
- kp clusterbuilder list
- ```
+
   
 
 
@@ -142,7 +138,13 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  Import descriptor file
  
  ```
- kp import -f descriptor-100.0.170.yaml
+ kp import -f descriptor-100.0.170.yaml --registry-ca-cert-path /tmp/ca.crt
+ ```
+ 
+  List the cluster builders available in your installation:
+ 
+ ```
+ kp clusterbuilder list
  ```
  
  

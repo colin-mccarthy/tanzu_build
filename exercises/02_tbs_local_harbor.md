@@ -49,6 +49,68 @@ cp Desktop/<ca-5.crt> /tmp/ca.crt
  ```
  imgpkg copy -b "registry.pivotal.io/build-service/bundle:1.2.2" --to-repo core.harbor.domain/build-service/build-service --registry-ca-cert-path=/tmp/ca.crt 
  ```
+ 
+ 
+ 
+  ## Install Tanzu Build Service with a Public Registry 🔧
+ 
+ Pull the Tanzu Build Service bundle image locally using imgpkg.
+ 
+ 
+ ```
+ imgpkg pull -b "core.harbor.domain/build-service/build-service:1.2.2" -o /tmp/bundle --registry-ca-cert-path=/tmp/ca.crt 
+ ```
+ 
+Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterStacks, ClusterStores, ClusterBuilders, and the CNB Lifecycle from TanzuNet automatically. Enabling this feature will keep Images up to date with the latest security patches and fixes. To enable this feature, pass in your TanzuNet credentials when running the install command below:
+ 
+ ```
+ ytt -f /tmp/bundle/values.yaml \
+    -f /tmp/bundle/config/ \
+    -f /tmp/ca.crt \
+    -v docker_repository='<IMAGE-REPOSITORY>' \
+    -v docker_username='<REGISTRY-USERNAME>' \
+    -v docker_password='<REGISTRY-PASSWORD>' \
+    -v tanzunet_username='<TANZUNET-USERNAME>' \
+    -v tanzunet_password='<TANZUNET-PASSWORD>' \
+    | kbld -f /tmp/bundle/.imgpkg/images.yml -f- \
+    | kapp deploy -a tanzu-build-service -f- -y
+ ```
+🔍 Note: This is identical to the IMAGE-REPOSITORY argument provided during imgpkg relocation command. 
+ 
+ 
+🔍 Exception: When using Dockerhub as your registry target, only use your DockerHub account for this value. For example, my-dockerhub-account (without /build-service). Otherwise, you will encounter an error similar to:
+ ```
+ Error: invalid credentials, ensure registry credentials for 'index.docker.io/my-dockerhub-account/
+ build-service/tanzu-buildpacks_go' are available locally
+ ```
+ 
+
+ 
+ ## Verify the install 🔧
+ 
+ Ensure that the kpack controller & webhook have a status of Running using kubectl get.
+ 
+ ```
+ kubectl get pods -n kpack
+ ```
+ 
+ Ensure that the dependency updater was created in the build-service namespace.
+
+ ```
+ kubectl get pods -n build-service
+ ``` 
+ 
+ List the cluster builders available in your installation:
+ 
+ ```
+ kp clusterbuilder list
+ ```
+  
+
+ 
+ 
+ 
+ 
 
 ## References
 

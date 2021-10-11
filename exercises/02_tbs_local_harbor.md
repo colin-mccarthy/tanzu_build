@@ -17,7 +17,7 @@
  Attempt to use imgpkg to copy the containers to your local Harbor with a self signed cert 🔧
 
  ```
- imgpkg copy -b "registry.pivotal.io/build-service/bundle:1.2.2" --to-repo core.harbor.domain/build-service/
+  imgpkg copy -b "registry.pivotal.io/build-service/bundle:1.2.2" --to-repo core.harbor.domain/build-service/build-service
  ```
  
  Notice the error you received
@@ -33,12 +33,19 @@ Download your Registry Certificate from the Harbor UI 🔧
 
 <img src="./screenshots/harbor_cert.png" width="450"> 
 
-copy the cert to /tmp/ca.crt
+##
+
+copy the cert to /tmp/ca.crt 🔧
 
 ```
 cp Desktop/<ca-5.crt> /tmp/ca.crt
 ```
 
+
+##
+
+ Attempt to use imgpkg to copy the containers to your local Harbor with a self signed cert using this flag --registry-ca-cert-path 🔧
+ 
  ```
  imgpkg copy -b "registry.pivotal.io/build-service/bundle:1.2.2" --to-repo core.harbor.domain/build-service/build-service --registry-ca-cert-path=/tmp/ca.crt 
  ```

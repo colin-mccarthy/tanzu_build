@@ -13,14 +13,9 @@ Verify that all of the tools are installed and working.
 ytt version && kapp version && kbld version && kwt version && imgpkg version
 ``` 
 
- ### Install Pivnet 🔧
+ ### Install Pivnet-CLI 🔧
  
- https://github.com/pivotal-cf/pivnet-cli
- 
- https://network.pivotal.io/products/build-service/
- 
- 
-Install pivnet-cli 
+
 ```
 brew install pivotal/tap/pivnet-cli
 ``` 
@@ -72,7 +67,7 @@ kp version
 ```
 
 
- ### Docker Login
+ ### Docker Login  🔧
  
  ```
  docker login

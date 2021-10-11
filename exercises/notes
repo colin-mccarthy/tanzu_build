@@ -1,0 +1,14 @@
+
+
+
+```
+docker cp Desktop/ca-5.crt a93a140efd5b:/usr/local/share/ca-certificates
+```
+
+```
+docker exec -t a93a140efd5b  update-ca-certificates
+```
+
+```
+docker exec -t a93a140efd5b  systemctl restart containerd.service
+```

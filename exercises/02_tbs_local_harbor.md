@@ -67,9 +67,9 @@ docker exec -t <CONTAINER ID> update-ca-certificates && systemctl restart contai
  
  
  
-  ## Install Tanzu Build Service  🔧
+  ##   
  
- Pull the Tanzu Build Service bundle image locally using imgpkg.
+ Pull the Tanzu Build Service bundle image locally using imgpkg 🔧
  
  
  ```

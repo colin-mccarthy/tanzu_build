@@ -162,3 +162,6 @@ https://community.pivotal.io/s/article/kapp-controller-reconcile-fails-when-priv
 https://github.com/kubernetes-sigs/kind/issues/110 <-- Kind insecure registries
                                                        
 https://makk.es/blog/docker-registry-on-k8s/#the-complete-rundown-
+                                                       
+```                                                       
+  k -n registry get secret registry -o jsonpath='{.data.tls\.crt}'|base64 -d|docker exec -i kind-control-plane sh -c "cat - > /usr/local/share/ca-certificates/registry-ca.crt && update-ca-certificates && systemctl restart containerd.service" ```

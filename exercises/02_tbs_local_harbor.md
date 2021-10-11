@@ -151,7 +151,7 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
 ## Create an image 🔧
  
 ``` 
-kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main
+kp image create dotnet-demo --tag cmccarth/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main --registry-ca-cert-path=/tmp/ca.crt 
 ``` 
  
  

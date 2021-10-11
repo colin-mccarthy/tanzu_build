@@ -20,9 +20,7 @@
 Error: Retried 5 times: Get "https://core.harbor.domain/v2/": x509: certificate signed by unknown authority
 ```
 
-https://github.com/vmware-tanzu/carvel-kapp-controller/issues/39
 
-https://vmtechie.blog/2021/09/11/code-to-container-with-tanzu-build-service/
 
 
 
@@ -31,3 +29,9 @@ https://vmtechie.blog/2021/09/11/code-to-container-with-tanzu-build-service/
 Download your ca.crt from the Harbor UI 🔧
 
 <img src="./screenshots/harbor_cert.png" width="450"> 
+
+## References
+
+https://github.com/vmware-tanzu/carvel-kapp-controller/issues/39
+
+https://vmtechie.blog/2021/09/11/code-to-container-with-tanzu-build-service/

@@ -25,4 +25,4 @@ https://github.com/vmware-tanzu/carvel-kapp-controller/issues/39
 https://vmtechie.blog/2021/09/11/code-to-container-with-tanzu-build-service/
 
 
-<img src="./docs/screenshots/harbor_cert.png" width="450"> 
+<img src="tanzu_build/docs/screenshots/harbor_cert.png" width="450"> 

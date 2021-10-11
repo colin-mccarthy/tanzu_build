@@ -26,7 +26,7 @@ Error: Retried 5 times: Get "https://core.harbor.domain/v2/": x509: certificate 
 
 ## 
 
-Download your ca.crt from the Harbor UI 🔧
+Download your Registry Certificate from the Harbor UI 🔧
 
 <img src="./screenshots/harbor_cert.png" width="450"> 
 

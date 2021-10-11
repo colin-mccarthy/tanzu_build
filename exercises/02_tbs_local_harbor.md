@@ -15,3 +15,7 @@
  ```
  imgpkg copy -b "registry.pivotal.io/build-service/bundle:1.2.2" --to-repo core.harbor.domain/build-service/
  ```
+
+```
+Error: Retried 5 times: Get "https://core.harbor.domain/v2/": x509: certificate signed by unknown authority
+```

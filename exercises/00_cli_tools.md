@@ -77,3 +77,18 @@ kp version
  docker login registry.pivotal.io
  ```
  
+ 
+ ### Install Tanzu CLI 
+ 
+ https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/0.1/tap-0-1/GUID-install.html#mac-cli
+ 
+ ```
+ mkdir tanzu
+ cd tanzu
+ ```
+ 
+ ```
+ pivnet download-product-files --product-slug='tanzu-application-platform' --release-version='0.2.0' --product-file-id=1055576
+ ```
+ 
+ 

@@ -135,7 +135,7 @@ Download the Dependency Descriptor file (descriptor-<version>.yaml) from the lat
  pivnet download-product-files --product-slug='tbs-dependencies' --release-version='100.0.170' --product-file-id=1044254
  ```
  
- Import descriptor file
+ Import descriptor file 🚨🚨🚨 - currently not working (connect: connection refused)
  
  ```
  kp import -f descriptor-100.0.170.yaml --registry-ca-cert-path /tmp/ca.crt

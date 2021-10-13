@@ -99,4 +99,15 @@ kp version
  sudo install  cli/core/v0.5.0/tanzu-core-darwin_amd64 /usr/local/bin/tanzu
  ```
  
+ ```
+ tanzu version
+ ```
+ 
+ ```
+ tanzu plugin install --local ./cli package
+ ```
+ 
+ ```
+ tanzu package version
+ ```
  

@@ -15,12 +15,6 @@ Verify that all of the tools are installed and working.
 ytt version && kapp version && kbld version && kwt version && imgpkg version
 ``` 
 
- ### Pivnet 🔧
-
-Login with pivnet
-``` 
-pivnet login --api-token='<refresh token>'
-```
 
  ### KP-CLI 🔧
 

@@ -6,6 +6,6 @@ To get started use the script located in the shell_kind.md file to deploy a Kind
 
 
 
-[Exercise 00 - CLI Tools](tanzu_build/exercises/00_cli_tools.md)
+[Exercise 00 - CLI Tools](./exercises/00_cli_tools.md)
 
 

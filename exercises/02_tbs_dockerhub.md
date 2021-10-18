@@ -47,7 +47,7 @@ kp version
  imgpkg copy -b "registry.pivotal.io/build-service/bundle:<TBS-VERSION>" --to-repo <IMAGE-REPOSITORY>
  ```
   
-  ## Install Tanzu Build Service with a Public Registry 🔧
+  ## Install Tanzu Build Service 🔧
  
  Pull the Tanzu Build Service bundle image locally using imgpkg.
  

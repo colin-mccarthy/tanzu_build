@@ -23,8 +23,6 @@ pivnet login --api-token='<refresh token>'
 ```
 
  ### KP-CLI 🔧
- 
- ```
 
 Verify the kp-cli is working
 

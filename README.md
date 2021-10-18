@@ -10,4 +10,6 @@ To get started use the script located in the shell_kind.md file to deploy a Kind
 
 [Exercise 01 - Docker Push](./exercises/01_docker_push.md)
 
+[Exercise 02 - Install TBS using DockerHub](./exercises/02_tbs_dockerhub.md)
+
 

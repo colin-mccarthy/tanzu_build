@@ -47,7 +47,7 @@ sha: c9929b8f
 ```
  
  
-Install the v1.4.0 plugins
+## Install the v1.4.0 plugins
  
  ```
  tanzu plugin install --local ./cli all
@@ -64,7 +64,12 @@ Install the v1.4.0 plugins
  ```
  
  
-
+## Install the TAP plugins
+```
+tanzu plugin install --local ./cli imagepullsecret
+tanzu plugin install --local ./cli apps
+tanzu plugin install --local ./cli accelerator
+```
  
 
  

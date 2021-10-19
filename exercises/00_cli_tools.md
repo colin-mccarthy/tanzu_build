@@ -104,7 +104,7 @@ kp version
  ```
  
  ```
- tanzu plugin install --local ./cli package
+ tanzu plugin install --local ./cli all
  ```
  
  ```

@@ -13,7 +13,7 @@ https://customerconnect.vmware.com/en/downloads/details?downloadGroup=TKG-140&pr
 
 unzip the tar file
 
-## create a tnazu directory
+## create a Tanzu directory
  
  
  ```

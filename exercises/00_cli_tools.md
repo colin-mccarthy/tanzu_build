@@ -1,7 +1,7 @@
 
 ## Prerequisites: CLI Tools 🔧
 
-### Install wget
+### Install wget 🔧
 
 ```
 brew install wget

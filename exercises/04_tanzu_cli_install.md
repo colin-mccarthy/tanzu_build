@@ -1,4 +1,4 @@
-https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/0.1/tap-0-1/GUID-install.html#mac-cli
+
 
 
 
@@ -44,3 +44,6 @@ https://customerconnect.vmware.com/en/downloads/details?downloadGroup=TKG-140&pr
  tanzu package version
  ```
  
+## resources 
+
+https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/0.1/tap-0-1/GUID-install.html#mac-cli

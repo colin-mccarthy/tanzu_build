@@ -21,7 +21,7 @@ unzip the tar file
  cd tanzu
  ```
 
-move the unzipped cli directory to you new tanzu directory
+move the unzipped cli directory to your new tanzu directory
  
  
  ```

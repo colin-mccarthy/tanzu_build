@@ -22,6 +22,27 @@ unzip the tar file
  ```
 
 move the unzipped cli directory to your new tanzu directory
+
+```
+cd cli
+```
+
+Install v1.4.0
+
+```
+sudo install core/v1.4.0/tanzu-core-darwin_amd64 /usr/local/bin/tanzu
+```
+
+Verify the install and version
+ 
+ ```
+ tanzu version
+ ```
+ 
+ 
+ 
+ 
+ 
  
  
  ```

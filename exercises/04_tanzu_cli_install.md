@@ -3,7 +3,7 @@
 
 
 
-## Go to the VMware download site
+## Go to the VMware download site 🔧
 
 https://my.vmware.com/en/web/vmware/downloads/info/slug/infrastructure_operations_management/vmware_tanzu_kubernetes_grid/1_x
 
@@ -13,7 +13,7 @@ https://customerconnect.vmware.com/en/downloads/details?downloadGroup=TKG-140&pr
 
 unzip the tar file
 
-## create a Tanzu directory
+## Create a Tanzu directory 🔧
  
  
  ```

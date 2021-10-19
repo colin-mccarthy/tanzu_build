@@ -1,6 +1,13 @@
 
 ## Prerequisites: CLI Tools 🔧
 
+### Install wget
+
+```
+brew install wget
+```
+
+
  ### Install Carvel 🔧
 
 ```

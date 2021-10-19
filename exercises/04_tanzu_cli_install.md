@@ -40,41 +40,33 @@ Verify the install and version
  ```
  example
  
- ```
- comccarthy@comccarthy-a01 tanzu % tanzu version
+```
 version: v1.4.0
 buildDate: 2021-08-30
 sha: c9929b8f
 ```
  
  
- 
- 
- 
- 
- ```
- pivnet download-product-files --product-slug='tanzu-application-platform' --release-version='0.2.0' --product-file-id=1055576
- ```
- 
- ```
- tar -xvf tanzu-framework-darwin-amd64.tar -C .
- ```
- 
- ```
- sudo install  cli/core/v0.5.0/tanzu-core-darwin_amd64 /usr/local/bin/tanzu
- ```
- 
- ```
- tanzu version
- ```
+Install the v1.4.0 plugins
  
  ```
  tanzu plugin install --local ./cli all
  ```
- 
+ verify 
  ```
  tanzu package version
  ```
+ 
+ list the plugins
+ 
+ ```
+ tanzu plugin list
+ ```
+ 
+ 
+
+ 
+
  
 ## resources 
 

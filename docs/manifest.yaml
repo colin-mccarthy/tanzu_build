@@ -1,0 +1,33 @@
+plugins:
+    - name: core
+      description: The core Tanzu CLI
+      versions: [v0.5.0]
+    - name: package
+      description: Tanzu package management
+      versions: [v0.5.0]
+    - name: imagepullsecret
+      description: Manage image pull secret operations. Image pull secrets enable the package and package repository consumers to authenticate to private registries.
+      versions: [v0.5.0]
+    - name: pinniped-auth
+      description: Pinniped authentication operations (usually not directly invoked)
+      versions: [v0.5.0]
+    - name: management-cluster
+      description: Kubernetes management cluster operations
+      versions: [v0.5.0]
+    - name: kubernetes-release
+      description: Kubernetes release operations
+      versions: [v0.5.0]
+    - name: login
+      description: Login to the platform
+      versions: [v0.5.0]
+    - name: cluster
+      description: Kubernetes cluster operations
+      versions: [v0.5.0]
+    - name: apps
+      description: Applications on Kubernetes
+      versions: [v0.5.0]
+    - name: accelerator
+      description: Manage accelerators in your kubernetes cluster
+      versions: [v0.5.0]
+version: ""
+coreVersion: v0.5.0

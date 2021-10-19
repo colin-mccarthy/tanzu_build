@@ -35,10 +35,17 @@ sudo install core/v1.4.0/tanzu-core-darwin_amd64 /usr/local/bin/tanzu
 
 Verify the install and version
  
- ```
+ `
  tanzu version
- ```
+ `
+ example
  
+ ```
+ comccarthy@comccarthy-a01 tanzu % tanzu version
+version: v1.4.0
+buildDate: 2021-08-30
+sha: c9929b8f
+```
  
  
  

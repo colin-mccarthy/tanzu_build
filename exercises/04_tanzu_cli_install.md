@@ -65,6 +65,11 @@ sha: c9929b8f
  
  
 ## Install the TAP plugins
+
+```
+pivnet download-product-files --product-slug='tanzu-application-platform' --release-version='0.2.0' --product-file-id=1055576
+```
+
 ```
 tanzu plugin install --local ./cli imagepullsecret
 tanzu plugin install --local ./cli apps

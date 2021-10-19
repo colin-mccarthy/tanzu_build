@@ -35,9 +35,9 @@ sudo install core/v1.4.0/tanzu-core-darwin_amd64 /usr/local/bin/tanzu
 
 Verify the install and version
  
- `
+ ```
  tanzu version
- `
+ ```
  example
  
  ```

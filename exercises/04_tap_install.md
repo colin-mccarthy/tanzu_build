@@ -1,14 +1,39 @@
 https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/0.1/tap-0-1/GUID-install.html#mac-cli
 
 
-Confirm the installation of the Tanzu CLI by running:
 
-```
-tanzu version
-```
 
-Create a namespace called tap-install for deploying the packages of the components by running:
 
-```
-kubectl create ns tap-install
-```
+### Install Tanzu CLI 
+ 
+ 
+ 
+ ```
+ mkdir tanzu
+ cd tanzu
+ ```
+ 
+ ```
+ pivnet download-product-files --product-slug='tanzu-application-platform' --release-version='0.2.0' --product-file-id=1055576
+ ```
+ 
+ ```
+ tar -xvf tanzu-framework-darwin-amd64.tar -C .
+ ```
+ 
+ ```
+ sudo install  cli/core/v0.5.0/tanzu-core-darwin_amd64 /usr/local/bin/tanzu
+ ```
+ 
+ ```
+ tanzu version
+ ```
+ 
+ ```
+ tanzu plugin install --local ./cli all
+ ```
+ 
+ ```
+ tanzu package version
+ ```
+ 

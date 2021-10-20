@@ -103,4 +103,64 @@ name: address-pool-1
       protocol: layer2
       addresses:
 192.168.2.128/25
+EOF
+
+# Install kapp-controller
+kapp deploy -a kc -f https://github.com/vmware-tanzu/carvel-kapp-controller/releases/latest/download/release.yml --yes
+# Configure overrides for Harbor install
+cat << EOF > .k8s/harbor-values.yml
+externalURL: https://${CORE_DOMAIN}
+expose:
+  tls:
+    certSource: secret
+    secret:
+      secretName: ${SECRET_NAME}
+      notarySecretName: ${SECRET_NAME}
+  ingress:
+    hosts:
+      core: ${CORE_DOMAIN}
+      notary: ${NOTARY_DOMAIN}
+    annotations:
+      kubernetes.io/ingress.class: "contour"
+      ingress.kubernetes.io/force-ssl-redirect: "true"
+      kubernetes.io/ingress.allow-http: "false"
+EOF
+
+# Create namespace for Harbor certificate and installation
+kubectl create namespace harbor
+
+# Install certificate before installing Harbor
+cat <<EOF | kubectl create -f -
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: harbor-cert
+  namespace: harbor
+spec:
+  dnsNames:
+'${CORE_DOMAIN}'
+'${NOTARY_DOMAIN}'
+  issuerRef:
+    kind: ClusterIssuer
+    name: tls-ca-issuer
+  secretName: ${SECRET_NAME}
+EOF
+
+# Install Harbor
+helm repo add harbor https://helm.goharbor.io
+helm upgrade --namespace harbor --install --wait --timeout 5m -f .k8s/harbor-values.yml local-harbor harbor/harbor
+
+# Install Harbor CLI
+mkdir .harbor
+wget https://github.com/hinyinlam-pivotal/cli-for-harbor/releases/download/v0.5/harbor-cli-0.0.1-SNAPSHOT.jar
+mv harbor-cli-0.0.1-SNAPSHOT.jar .harbor
+alias harbor="java -jar .harbor/harbor-cli-0.0.1-SNAPSHOT.jar"
+
+# Execute docker login
+docker login -u admin -p Harbor12345 https://${CORE_DOMAIN}
+
+# Test docker pull, tag, push of light-weight test image
+docker pull gcr.io/google-samples/hello-app:1.0
+docker tag gcr.io/google-samples/hello-app:1.0 ${CORE_DOMAIN}/library/hello-app:1.0
+docker push ${CORE_DOMAIN}/library/hello-app:1.0
 ```

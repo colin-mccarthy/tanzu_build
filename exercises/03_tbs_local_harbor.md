@@ -191,6 +191,13 @@ View default namespace - to see pods spinning up
  kbld -f descriptor-100.0.170.yaml -f /tmp/dependencies-relocated.lock | kp import -f - --registry-ca-cert-path /tmp/ca.crt
  ```
  
+ 
+ ```
+ kubectl create secret docker-registry regcred --docker-server=core.harbor.domain --docker-username=admin --docker-password=Harbor12345
+ 
+kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "regcred"}]}'
+ ```
+ 
 
 ## References
 

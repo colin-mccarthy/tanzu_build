@@ -10,6 +10,8 @@
 
  ```
  docker login registry.pivotal.io
+ 
+ docker login core.harbor.domain
  ```
 
  ##

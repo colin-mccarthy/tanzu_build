@@ -171,6 +171,26 @@ View default namespace - to see pods spinning up
 
 
  
+ 
+ notes:
+ 
+ ```
+ kbld package -f descriptor-<version>.yaml \
+  --output /tmp/packaged-dependencies.tar
+ ```
+ 
+ ```
+ kbld unpackage -f descriptor-100.0.170.yaml \
+  --input /tmp/packaged-dependencies.tar \
+  --repository 'core.harbor.domain/build-service/build-service' \
+  --lock-output /tmp/dependencies-relocated.lock \
+  --registry-ca-cert-path /tmp/ca.crt
+ ```
+ 
+ ```
+ kbld -f descriptor-100.0.170.yaml -f /tmp/dependencies-relocated.lock | kp import -f - --registry-ca-cert-path /tmp/ca.crt
+ ```
+ 
 
 ## References
 
@@ -185,4 +205,4 @@ https://github.com/kubernetes-sigs/kind/issues/110 <-- Kind insecure registries
 https://makk.es/blog/docker-registry-on-k8s/#the-complete-rundown-
                                                        
 ```                                                       
-  k -n registry get secret registry -o jsonpath='{.data.tls\.crt}'|base64 -d|docker exec -i kind-control-plane sh -c "cat - > /usr/local/share/ca-certificates/registry-ca.crt && update-ca-certificates && systemctl restart containerd.service" ```
+                                                     

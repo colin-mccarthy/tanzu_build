@@ -73,6 +73,7 @@ Tanzu Build Service 1.2 ships with a dependency updater that can update ClusterS
  build-service/tanzu-buildpacks_go' are available locally
  ```
  
+🔍 An image-pull-secret called tbs-install-pull-secret will be created in the tbs namespace with the registry and registry username/password configured at install time.
 
  
  ## Verify the install 🔧

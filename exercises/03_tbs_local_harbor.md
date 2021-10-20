@@ -36,7 +36,7 @@
 copy the cert to /tmp/ca.crt 🔧
 
 ```
-cp Desktop/<ca-5.crt> /tmp/ca.crt
+cp Desktop/ca-5.crt /tmp/ca.crt
 ```
 
 Find your kind CONTAINER ID 🔧

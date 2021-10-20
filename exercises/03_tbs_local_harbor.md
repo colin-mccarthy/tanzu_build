@@ -54,7 +54,9 @@ docker exec -t <CONTAINER ID> update-ca-certificates
 
 docker exec -t <CONTAINER ID> systemctl restart containerd.service
 ```
-
+```
+sudo cp /tmp/ca.crt /etc/docker/certs.d/core.harbor.domain/ca.crt
+```
 
 
 ##

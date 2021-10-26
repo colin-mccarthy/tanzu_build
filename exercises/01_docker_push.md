@@ -2,11 +2,11 @@
 
 The Kind cluster should have Harbor already installed.
 
-URL: core.harbor.domain (This should have been set in your `/etc/hosts` file before running the srcipt)
+URL: `core.harbor.domain` (This should have been set in your `/etc/hosts` file before running the srcipt)
 
-UN: Admin
+UN: `Admin`
 
-PW: Harbor12345
+PW: `Harbor12345`
 
 
 

@@ -1,6 +1,6 @@
 
 
-The Kind cluster should have Harbor already installed.
+## The Kind cluster should have Harbor already installed.
 
 URL: `core.harbor.domain` (This should have been set in your `/etc/hosts` file before running the srcipt)
 

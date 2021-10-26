@@ -1,4 +1,4 @@
-## Set up a Registry Endpoint
+## Set up a Registry Endpoint in Harbor
 
 Whether doing replication or proxy, you need to configure Dockerhub as a replication endpoint.
 

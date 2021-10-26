@@ -10,12 +10,6 @@ PW: `Harbor12345`
 
 
 
-## Login to harbor with Docker 🔧
-
-```
-docker login core.harbor.domain
-```
-
 
 
 ## In Harbor create a project named test 🔧

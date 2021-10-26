@@ -82,6 +82,16 @@ Set Destination namespace to `dockerhub-replica/python`
 Leave the rest as their defaults.
 
 
+## Test Replication 🔧
+
+We chose manual replication (so that we don’t overwhelm the rate limits) so we need to actually perform the replication step, and then validate that it worked.
+
+Go to Administration -> Replication and click the dockerhub-python-slim item then click the Replicate Button.
+Harbor will kick off the replication and will show the attempt below in the Executions section. You can click on it for more details or logs, but for now we’re just waiting for it to finish.
+
+Go to Projects and select dockerhub-replica then click Repositories. You should see dockerhub-replica/python/python with at least one Artifact. *To avoid this accidental redundancy in the name we should have set Destination namespace to dockerhub-replica rather than dockerhub-replica/python.
+
+
 
 
 

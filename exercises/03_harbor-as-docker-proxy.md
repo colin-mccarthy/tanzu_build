@@ -29,6 +29,24 @@ Set Proxy Cache to `Docker Hub` (the Endpoint we created earlier).
 
 
 
+
+## Test the proxy is working with `docker pull`:
+
+```
+$ docker pull core.harbor.domain/dockerhub-proxy/library/ubuntu:20.04
+```
+```
+20.04: Pulling from dockerhub-proxy/library/ubuntu
+83ee3a23efb7: Pull complete
+db98fc6f11f0: Pull complete
+f611acd52c6c: Pull complete
+Digest: sha256:703218c0465075f4425e58fac086e09e1de5c340b12976ab9eb8ad26615c3715
+Status: Downloaded newer image for harbor.aws.paulczar.wtf/dockerhub-proxy/library/ubuntu:20.04
+harbor.aws.paulczar.wtf/dockerhub-proxy/library/ubuntu:20.04
+```
+
+
+
 ## references
 
 https://tanzu.vmware.com/developer/guides/harbor-as-docker-proxy/

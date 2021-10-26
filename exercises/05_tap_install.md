@@ -84,7 +84,7 @@ $ tanzu package available list -n tap-install
 
 Note: If using a Tanzu Kubernetes Grid cluster above output will show some other Tanzu packages as well.
 
-List version information for the cnrs.tanzu.vmware.com package by running:
+List version information for the `cnrs.tanzu.vmware.com` package by running:
 
 
 ```

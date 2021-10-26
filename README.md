@@ -12,7 +12,7 @@ To get started use the script located in the shell_kind.md file to deploy a Kind
 
 [Exercise 02 - Install TBS using DockerHub](./exercises/02_tbs_dockerhub.md)
 
-
+[Exercise 03 - Harbor as a Dockerhub proxy](./exercises/03_harbor-as-docker-proxy.md)
 
 [Exercise 04 - Install Tanzu CLI](./exercises/04_tanzu_cli_install.md)
 

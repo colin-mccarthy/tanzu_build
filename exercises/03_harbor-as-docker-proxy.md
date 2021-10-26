@@ -1,7 +1,7 @@
 # Harbor as Dockerhub proxy
 
 
-## Set up a Registry Endpoint in Harbor
+## Set up a Registry Endpoint in Harbor 🔧
 
 Whether doing replication or proxy, you need to configure Dockerhub as a replication endpoint.
 
@@ -15,7 +15,7 @@ Press the Test Connection button and then after a successful test hit OK to save
 
 
 
-## Create a Dockerhub Proxy
+## Create a Dockerhub Proxy 🔧
 
 Go to Projects and click the + New Project button.
 

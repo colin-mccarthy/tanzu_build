@@ -33,7 +33,7 @@ Set Proxy Cache to `Docker Hub` (the Endpoint we created earlier).
 ## Test the proxy is working with `docker pull`:
 
 ```
-$ docker pull core.harbor.domain/dockerhub-proxy/library/ubuntu:20.04
+docker pull core.harbor.domain/dockerhub-proxy/library/ubuntu:20.04
 ```
 ```
 20.04: Pulling from dockerhub-proxy/library/ubuntu

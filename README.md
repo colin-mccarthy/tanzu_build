@@ -16,6 +16,8 @@ To get started use the script located in the shell_kind.md file to deploy a Kind
 
 [Exercise 04 - Install Tanzu CLI](./exercises/04_tanzu_cli_install.md)
 
+[Exercise 05 - Install TAP](./exercises/05_tap_install.md)
+
 
 
 

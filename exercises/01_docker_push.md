@@ -1,8 +1,16 @@
-In Harbor create a project named test 
+## In Harbor create a project named test 
+
+Go to Projects and click the + New Project button.
+
+Set Project Name to `test`.
+
+Set Access Level to Public (unless you intend to make it private and require login).
+
+Leave Storage Quota at the default -1 GB.
 
 
 
-Login to your local Harbor with Docker 
+## Login to your local Harbor with Docker 
 ```
 docker login core.harbor.domain
 ```
@@ -27,4 +35,4 @@ docker push core.harbor.domain/test/ticket-function
 ```
 
 
-Verify the image is in Harbor by viewing the repositories for the test project.
+## Verify the image is in Harbor by viewing the repositories for the test project.

@@ -8,7 +8,7 @@ Set the Provider and Name both to `Docker Hub`.
 
 You can leave the rest of the settings as default, unless you want access to private images, in which case add in your Access ID and Access Secret.
 
-
+Press the Test Connection button and then after a successful test hit OK to save.
 
 ## references
 

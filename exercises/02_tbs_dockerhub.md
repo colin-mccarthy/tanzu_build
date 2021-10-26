@@ -1,8 +1,5 @@
 
-
- ## Build service install docs
-
-https://docs.pivotal.io/build-service/1-2/installing.html
+There are a number of packages and CLI tools you will need to work with Tanzu Build. This first exercise will get you familiar with installing them.
 
 
 ## Prerequisites: 🔧
@@ -145,3 +142,11 @@ View default namespace - to see pods spinning up
  ```
  kp image list
  ```
+ 
+ 
+ ## resources 
+ 
+ 
+Build service install docs
+
+https://docs.pivotal.io/build-service/1-2/installing.html

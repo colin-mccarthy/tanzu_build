@@ -47,7 +47,7 @@ harbor.aws.paulczar.wtf/dockerhub-proxy/library/ubuntu:20.04
 
 
 
-# Configure Docker Hub Replication
+# Configure Docker Hub Replication 🔧
 
 With Proxy-ing enabled, let’s now turn our eyes to Replication. This is where we can surgically select which images we want to make available.
 

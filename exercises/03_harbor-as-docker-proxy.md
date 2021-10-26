@@ -61,9 +61,9 @@ Leave all other settings as their defaults.
 
 ## Create a Replication Rule 🔧
 
-Next we create a Replication Rule to determine the specific Images we want to replicate. In this case we want only the library/python:3.8.2-slim image. We restrict this as Replication can quickly hit the Docker Hub rate limits.
+Next we create a Replication Rule to determine the specific Images we want to replicate. In this case we want only the `library/python:3.8.2-slim` image. We restrict this as Replication can quickly hit the Docker Hub rate limits.
 
-The resource filters support basic pattern recognition, so you could use library/** if you wanted to replicate all of the official images, however this would quickly hit the rate limits.
+The resource filters support basic pattern recognition, so you could use `library/**` if you wanted to replicate all of the official images, however this would quickly hit the rate limits.
 
 Go to Administration -> Replication and click the + New Replication Rule button.
 

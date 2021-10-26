@@ -1,4 +1,4 @@
-# Harbor as Dockerhub proxy
+# Harbor as a Dockerhub proxy
 
 
 ## Set up a Registry Endpoint in Harbor 🔧

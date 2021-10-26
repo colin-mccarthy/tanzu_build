@@ -1,4 +1,4 @@
-## Harbor
+
 
 The Kind cluster should have Harbor already installed.
 
@@ -10,7 +10,7 @@ PW: Harbor12345
 
 
 
-## login to harbor with Docker
+## Login to harbor with Docker 🔧
 
 ```
 docker login core.harbor.domain

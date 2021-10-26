@@ -19,7 +19,7 @@ kubectl create secret docker-registry tap-registry \
 --docker-username=TANZU-NET-USER \
 --docker-password=TANZU-NET-PASSWORD
 ```
-Where TANZU-NET-USER and TANZU-NET-PASSWORD are your credentials for Tanzu Network.
+Where `TANZU-NET-USER` and `TANZU-NET-PASSWORD` are your credentials for Tanzu Network.
 
 Note: You must name the secret tap-registry.
 

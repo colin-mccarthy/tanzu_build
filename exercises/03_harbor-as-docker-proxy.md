@@ -16,13 +16,13 @@ Press the Test Connection button and then after a successful test hit OK to save
 
 Go to Projects and click the + New Project button.
 
-Set Project Name to dockerhub-proxy.
+Set Project Name to `dockerhub-proxy`.
 
 Set Access Level to Public (unless you intend to make it private and require login).
 
-Leave Storage Quota at the default -1 GB.
+Leave Storage Quota at the default `-1` GB.
 
-Set Proxy Cache to Docker Hub (the Endpoint we created earlier).
+Set Proxy Cache to `Docker Hub` (the Endpoint we created earlier).
 
 
 

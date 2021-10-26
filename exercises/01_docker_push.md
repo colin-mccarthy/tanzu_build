@@ -1,6 +1,8 @@
+This exercise will verify your local Harbor is working and get you familiar with it.
 
 
-## The Kind cluster should have Harbor already installed.
+
+### The Kind cluster should have Harbor already installed.
 
 ### You can access Harbor via a web browser locally at:
 

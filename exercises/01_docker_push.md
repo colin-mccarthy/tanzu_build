@@ -1,3 +1,23 @@
+## Harbor
+
+The Kind cluster should have Harbor already installed.
+
+URL: core.harbor.domain (This should have been set in your `/etc/hosts` file before running the srcipt)
+
+UN: Admin
+
+PW: Harbor12345
+
+
+
+## login to harbor with Docker
+
+```
+docker login core.harbor.domain
+```
+
+
+
 ## In Harbor create a project named test 🔧
 
 Go to Projects and click the + New Project button.

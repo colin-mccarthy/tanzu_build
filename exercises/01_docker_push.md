@@ -8,7 +8,7 @@ URL: `https://core.harbor.domain` (This should have been set in your `/etc/hosts
 
 ### The default credentials are:
 
-UN: `Admin`
+UN: `admin`
 
 PW: `Harbor12345`
 

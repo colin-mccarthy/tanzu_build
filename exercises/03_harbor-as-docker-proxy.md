@@ -47,6 +47,20 @@ harbor.aws.paulczar.wtf/dockerhub-proxy/library/ubuntu:20.04
 
 
 
+# Configure Docker Hub Replication
+
+With Proxy-ing enabled, let’s now turn our eyes to Replication. This is where we can surgically select which images we want to make available.
+
+Go to Projects and click the + New Project button.
+
+Set Project Name to `dockerhub-replica`.
+
+Leave all other settings as their defaults.
+
+
+
+
+
 ## references
 
 https://tanzu.vmware.com/developer/guides/harbor-as-docker-proxy/

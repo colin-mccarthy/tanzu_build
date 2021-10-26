@@ -1,6 +1,4 @@
 
-There are a number of packages and CLI tools you will need to work with Tanzu Build. This first exercise will get you familiar with installing them.
-
 
 ## Prerequisites: 🔧
 

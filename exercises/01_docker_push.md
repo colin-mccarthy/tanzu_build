@@ -1,14 +1,12 @@
 This exercise will verify your local Harbor is working and get you familiar with it.
 
+The Kind cluster should have Harbor already installed.
 
-
-### The Kind cluster should have Harbor already installed.
-
-### You can access Harbor via a web browser locally at:
+You can access Harbor via a web browser locally at:
 
 URL: `https://core.harbor.domain` (This should have been set in your `/etc/hosts` file before running the srcipt)
 
-### The default credentials are:
+The default credentials are:
 
 UN: `admin`
 

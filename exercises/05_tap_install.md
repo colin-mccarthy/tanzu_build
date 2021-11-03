@@ -106,3 +106,5 @@ $ tanzu package available list cnrs.tanzu.vmware.com -n tap-install
 ## resources 
 
 https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/0.1/tap-0-1/GUID-install.html#mac-cli
+
+https://tanzu.vmware.com/developer/guides/gs-tap-on-kind-pt1/

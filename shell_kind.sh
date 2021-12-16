@@ -84,17 +84,17 @@ helm install \
   --set installCRDs=true
 
 
-sleep 5
+# sleep 5
 
-echo "> 😊😊 Verify Cert-Manager install"
+# echo "> 😊😊 Verify Cert-Manager install"
 
-kubectl get pods -n cert-manager
+# kubectl get pods -n cert-manager
 
-kubectl apply -f clusterIssuer.yaml
+# kubectl apply -f clusterIssuer.yaml
 
-kubectl wait --for=condition=Ready ClusterIssuer/clusterissuer-self-signed
+# kubectl wait --for=condition=Ready ClusterIssuer/clusterissuer-self-signed
 
-kubectl get ClusterIssuer
+# kubectl get ClusterIssuer
 
 
 ##

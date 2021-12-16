@@ -141,12 +141,15 @@ kubectl get pods -n harbor
 ##
 ## code-server
 ##
+echo "> 😊😊 Install Code-Server"📦
 
 helm upgrade --install code-server ci/helm-chart --namespace code-server --create-namespace
 
 sleep 5
 
 sleep 5
+
+kubectl get pods -n code-server
 
 
 echo "> 😊😊 done!"

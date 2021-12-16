@@ -1,16 +1,16 @@
 ## Prerequisites: 🔧
 
-Place the ```clusterIssuer.yaml``` file in the same directory as the script.
+## Place the ```clusterIssuer.yaml``` file in the same directory as the script.
 
-Install helm
+## Install helm
 
-Modify your Docker Desktop JSON config file to include the insecure-registries section shown in docker.md
+## Modify your Docker Desktop JSON config file to include the insecure-registries section shown in docker.md
 
-Add the hostname to your /etc/hosts file  ```127.0.0.1 core.harbor.domain```
+## Add the hostname to your /etc/hosts file  ```127.0.0.1 core.harbor.domain```
 
 ## Script 🔧
 
-```
+
 #!/bin/bash
 #
 # 
@@ -44,13 +44,22 @@ nodes:
   - containerPort: 443
     hostPort: 443
     protocol: TCP
+  - containerPort: 8888
+    hostPort: 8888
+    protocol: TCP
 EOF
 
 echo "> 😊😊 Verify Cluster install"
 
 kubectl wait --for=condition=Ready=true node/kind-control-plane --timeout=30s
 
-kubectl get nodes 
+kubectl get nodes
+
+##
+## alias
+##
+
+alias k=kubectl 
 
 ##
 ## cert-manager
@@ -127,19 +136,33 @@ sleep 5
 
 kubectl get pods -n harbor
 
+
+
+##
+## code-server
+##
+
+helm upgrade --install code-server ci/helm-chart --namespace code-server --create-namespace
+
+sleep 5
+
+sleep 5
+
+
 echo "> 😊😊 done!"
 
-```
+
+
 
 
 ## Now open a browser session🔧
 
-https://core.harbor.domain/harbor
+## https://core.harbor.domain/harbor
 
 
-Default credentails
-```
-login: admin
-pw: Harbor12345
-```
+## Default credentails
+
+## login: admin
+## pw: Harbor12345
+
 

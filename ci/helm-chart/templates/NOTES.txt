@@ -15,8 +15,8 @@
   export SERVICE_IP=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "code-server.fullname" . }} -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
   echo http://$SERVICE_IP:{{ .Values.service.port }}
 {{- else if contains "ClusterIP" .Values.service.type }}
-  echo "Visit http://127.0.0.1:8080 to use your application"
-  kubectl port-forward --namespace {{ .Release.Namespace }} service/{{ include "code-server.fullname" . }} 8080:http
+  echo "Visit http://127.0.0.1:8888 to use your application"
+  kubectl port-forward --namespace {{ .Release.Namespace }} service/{{ include "code-server.fullname" . }} 8888:http
 {{- end }}
 
 Administrator credentials:

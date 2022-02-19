@@ -4,7 +4,7 @@ There are a number of packages and CLI tools you will need to work with Tanzu Bu
 
 ### Install wget 🔧
 
-```yaml
+```bash
 brew install wget
 ```
 
